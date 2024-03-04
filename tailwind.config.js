@@ -9,12 +9,13 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
     },
+    screens: {
+      sm: "320px",
+      md: "768px",
+      lg: "1200px",
+      xl: "1440px",
+    },
   },
-  screens: {
-    mobile: "320px",
-    tablet: "768px",
-    desktop: "1200px",
-    xl: "1440px",
-  },
+
   plugins: [],
 };

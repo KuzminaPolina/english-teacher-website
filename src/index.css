@@ -26,3 +26,18 @@ body {
 * {
   scroll-behavior: smooth;
 }
+
+.pink-gradient {
+  background: linear-gradient(
+    175deg,
+    #ffffff00 0%,
+    #ffffff00 50%,
+    #d69bd2 51%,
+    #af80be 100%
+  );
+}
+
+.hero-bkg {
+  background: url("./assets/hero-bkg-desktop-full.jpg") top right/cover
+    no-repeat;
+}

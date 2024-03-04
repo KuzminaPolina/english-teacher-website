@@ -32,7 +32,7 @@ const Navbar = () => {
       animate={open ? "open" : "closed"}
     >
       <motion.div
-        className="bg-[#8865A9] w-[400px] fixed top-0 left-0 bottom-0 z-10"
+        className="bg-[#8865A9] w-[400px] fixed top-0 left-0 bottom-0 z-40"
         variants={variants}
       >
         <Links />
