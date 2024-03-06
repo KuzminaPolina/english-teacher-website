@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const ToggleButton = ({ setOpen }: any) => {
   return (
     <button
-      className="fixed w-[50px] h-[50px] top-[25px] left-[38px] bg-transparent z-50"
+      className="fixed w-[50px] h-[50px] top-[16px] left-[29px] bg-transparent z-50"
       onClick={() => {
         setOpen((prev: boolean) => !prev);
       }}

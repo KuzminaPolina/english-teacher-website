@@ -6,14 +6,14 @@ import ToggleButton from "./ToggleButton";
 
 const variants = {
   open: {
-    clipPath: "circle(1400px at 50px 50px)",
+    clipPath: "circle(1400px at 40px 40px)",
     transition: {
       type: "spring",
       stiffness: 20,
     },
   },
   closed: {
-    clipPath: "circle(30px at 50px 50px)",
+    clipPath: "circle(30px at 40px 40px)",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -32,7 +32,7 @@ const Navbar = () => {
       animate={open ? "open" : "closed"}
     >
       <motion.div
-        className="bg-[#8865A9] w-[400px] fixed top-0 left-0 bottom-0 z-40"
+        className="bg-[#8865A9] w-[100%] md:w-[400px] fixed top-0 left-0 bottom-0 z-40"
         variants={variants}
       >
         <Links />

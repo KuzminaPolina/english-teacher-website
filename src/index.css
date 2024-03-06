@@ -21,23 +21,35 @@
 body {
   min-width: 320px;
   min-height: 100vh;
+  margin: 0;
 }
 
 * {
   scroll-behavior: smooth;
 }
 
-.pink-gradient {
-  background: linear-gradient(
-    175deg,
-    #ffffff00 0%,
-    #ffffff00 50%,
-    #d69bd2 51%,
-    #af80be 100%
-  );
+.diagonal {
+  z-index: 20;
+  position: relative;
+}
+
+.diagonal::after {
+  content: "";
+  background-image: linear-gradient(to bottom, #b583c0 0%, #936daf 100%);
+  position: absolute;
+  inset: 0;
+  transform: skewY(-5deg);
+  z-index: -1;
 }
 
 .hero-bkg {
-  background: url("./assets/hero-bkg-desktop-full.jpg") top right/cover
-    no-repeat;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-bkg picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
