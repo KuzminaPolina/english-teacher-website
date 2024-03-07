@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     id: "about",
-    title: "關於我",
+    title: "我的經驗",
   },
   {
     id: "reviews",

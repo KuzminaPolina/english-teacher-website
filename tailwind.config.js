@@ -7,6 +7,8 @@ export default {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+        noto: ["Noto Serif TC", "serif"],
+        notoSans: ["Noto Sans TC", "sans-serif"],
       },
     },
     screens: {
