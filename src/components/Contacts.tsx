@@ -1,6 +1,6 @@
 const Contacts = () => {
   return (
-    <section className="px-4 md:px-10 lg:px-32 py-28">
+    <section id="trial" className="px-4 md:px-10 lg:px-32 py-28">
       <div className="max-w-[80rem] mx-auto mb-24">
         <div className="relative mb-20">
           <p className="text-3xl md:text-6xl text-[#c8b0c9] text-right">
