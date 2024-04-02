@@ -39,6 +39,7 @@ body {
 .diagonal::after {
   content: "";
   background-image: linear-gradient(to bottom, #d69bd2 0%, #8865a9 100%);
+  /*  background-image: linear-gradient(to bottom, #d69bd2 0%, #6157ff 100%); */
   position: absolute;
   inset: 0;
   transform: skewY(-5deg);
@@ -55,4 +56,27 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle:hover {
+  -webkit-box-shadow: 0px 0px 3px 5px rgb(255, 254, 175),
+    0px 0px 20px 5px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(255, 254, 175),
+    0px 0px 20px 5px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px 5px rgba(255, 254, 175),
+    0px 0px 20px 5px rgba(255, 255, 255, 1);
+}
+
+.circle:active {
+  background-color: rgb(218, 165, 31);
 }
