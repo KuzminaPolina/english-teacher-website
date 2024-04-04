@@ -3,8 +3,8 @@ import { heroSection } from "../constants";
 const Contacts = () => {
   return (
     <section id="trial" className="diagonal px-4 md:px-10 lg:px-32 py-28">
-      <div className="max-w-[80rem] mx-auto mb-24">
-        <div className="relative mb-20">
+      <div className="max-w-[80rem] mx-auto mb-10 md:mb-24">
+        <div className="relative">
           <p className="text-3xl md:text-6xl text-[#e1c1e2] text-right">
             Book a Trial
           </p>
@@ -14,8 +14,8 @@ const Contacts = () => {
         </div>
       </div>
       <div className="max-w-[80rem] mx-auto">
-        <ul className="flex gap-10">
-          <li className="relative">
+        <ul className="flex flex-col md:flex-row md:gap-10">
+          <li className="relative self-end">
             <div className=" bg-amber-400 circle">
               <a href={heroSection.phoneLink}>
                 <p className="text-xl text-center">
@@ -27,7 +27,7 @@ const Contacts = () => {
             </div>
           </li>
           <li className="text-white flex-1 text-xl">
-            <h3 className="text-amber-400 text-5xl font-bold pr-3 font-inter mb-10">
+            <h3 className="text-amber-400 text-4xl md:text-5xl font-bold pr-3 font-inter mb-10">
               預定免費試教
             </h3>
             <p className="text-white text-xl inline-block">

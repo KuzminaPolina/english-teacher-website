@@ -4,6 +4,11 @@ import {
   heroFull,
   teacherGongBig,
   teacherGongSm,
+  studyMode,
+  selfTest,
+  confidence,
+  speed,
+  vocab,
 } from "../assets";
 
 export const navLinks = [
@@ -72,5 +77,40 @@ export const reviews = [
     name: "龚俊",
     content:
       "記共前野敗顔移名察明課念話朝載提室。展何上作動学囲勤岡子抗判。初年余皇動経左点活内連百分崎星府万。",
+  },
+];
+
+export const advantages = [
+  {
+    id: "adv 1",
+    img: studyMode,
+    title: "學習模式",
+    content: "反覆的英文對談加上中翻英訓練",
+  },
+  {
+    id: "adv 2",
+    img: selfTest,
+    title: "檢驗成效的方法",
+    content: "每次英語對談都可自行檢驗",
+  },
+  {
+    id: "adv 3",
+    img: confidence,
+    title: "學習信心",
+    content: "越常講英文，英語能力必定越提升，信心也會隨之增加",
+  },
+  {
+    id: "adv 4",
+    img: speed,
+    title: "學習速度",
+    content:
+      "初期學習速度雖較慢，但單字不易忘，文法觀念也具系統性，在後期能培養出強烈語感，學習速度也隨之加快",
+  },
+  {
+    id: "adv 5",
+    img: vocab,
+    title: "背單子",
+    content:
+      "照音拼字，並知道那些單字無法對應中文，在學習中可大幅降低被中文干擾的狀況",
   },
 ];

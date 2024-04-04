@@ -1,8 +1,4 @@
-import StudyMode from "../assets/sprite/study_mode.svg";
-import SelfTest from "../assets/sprite/Self_test.svg";
-import Confidence from "../assets/sprite/Improvement.svg";
-import Speed from "../assets/sprite/Student.svg";
-import Vocab from "../assets/sprite/Vocabulary_type-2.svg";
+import { advantages } from "../constants";
 
 const Teaching = () => {
   return (
@@ -18,56 +14,24 @@ const Teaching = () => {
         </div>
       </div>
       <div className="max-w-[90rem] mx-auto">
-        <ul className="grid grid-cols-2 gap-5">
-          <li className="shadow-xl rounded-3xl p-5 flex gap-5">
-            <div>
-              <img src={StudyMode} width="150" alt="study icon" />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">學習模式</h3>
-              <p>反覆的英文對談加上中翻英訓練</p>
-            </div>
-          </li>
-          <li className="shadow-xl rounded-3xl p-5 flex gap-5">
-            <div>
-              <img src={SelfTest} width="150" alt="study icon" />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">檢驗成效的方法</h3>
-              <p>每次英語對談都可自行檢驗</p>
-            </div>
-          </li>
-          <li className="shadow-xl rounded-3xl p-5 flex gap-5">
-            <div>
-              <img src={Confidence} width="150" alt="study icon" />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">學習信心</h3>
-              <p>越常講英文，英語能力必定越提升，信心也會隨之增加</p>
-            </div>
-          </li>
-          <li className="shadow-xl rounded-3xl p-5 flex gap-5">
-            <div>
-              <img src={Speed} width="150" alt="study icon" />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">學習速度</h3>
-              <p>
-                初期學習速度雖較慢，但單字不易忘，文法觀念也具系統性，在後期能培養出強烈語感，學習速度也隨之加快
-              </p>
-            </div>
-          </li>
-          <li className="shadow-xl rounded-3xl p-5 flex gap-5">
-            <div>
-              <img src={Vocab} width="150" alt="study icon" />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">背單子</h3>
-              <p>
-                照音拼字，並知道那些單字無法對應中文，在學習中可大幅降低被中文干擾的狀況
-              </p>
-            </div>
-          </li>
+        <ul className="grid md:grid-cols-2 gap-5">
+          {advantages.map((advantage) => (
+            <li className="shadow-xl rounded-3xl p-5 grid grid-cols-2 sm:max-w-[400px] md:max-w-none sm:mx-auto md:mx-0 md:flex md:gap-5">
+              <div className="w-[150px]">
+                <img
+                  src={advantage.img}
+                  width="150"
+                  height="150"
+                  className="w-[150px] min-w-[150px]"
+                  alt="study icon"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-4">{advantage.title}</h3>
+                <p className="text-xl">{advantage.content}</p>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
     </section>
