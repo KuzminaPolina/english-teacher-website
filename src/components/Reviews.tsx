@@ -15,7 +15,7 @@ const Reviews = () => {
       <div className="max-w-[90rem] mx-auto">
         <ul className="flex flex-col md:grid grid-cols-3 gap-10">
           {reviews.map((reviewItem) => (
-            <li className="diagonal p-10">
+            <li className="diagonal p-10" key={reviewItem.id}>
               <div className="flex items-center gap-5 mb-7">
                 <div className="w-[80px] h-[80px] bg-slate-400 rounded-full"></div>
                 <p className="text-white text-xl font-bold">

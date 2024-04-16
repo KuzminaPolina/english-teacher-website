@@ -16,7 +16,10 @@ const Teaching = () => {
       <div className="max-w-[90rem] mx-auto">
         <ul className="grid md:grid-cols-2 gap-5">
           {advantages.map((advantage) => (
-            <li className="shadow-xl rounded-3xl p-5 grid grid-cols-2 sm:max-w-[400px] md:max-w-none sm:mx-auto md:mx-0 md:flex md:gap-5">
+            <li
+              className="shadow-xl rounded-3xl p-5 grid grid-cols-2 sm:max-w-[400px] md:max-w-none sm:mx-auto md:mx-0 md:flex md:gap-5"
+              key={advantage.id}
+            >
               <div className="w-[150px]">
                 <img
                   src={advantage.img}
