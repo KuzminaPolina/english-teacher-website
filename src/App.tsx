@@ -6,6 +6,7 @@ import {
   Teaching,
   Footer,
   Hero,
+  Calendar,
 } from "./components";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Reviews />
         <Contacts />
         <Teaching />
+        <Calendar />
       </main>
       <footer>
         <Footer />

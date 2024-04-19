@@ -80,3 +80,18 @@ body {
 .circle:active {
   background-color: rgb(218, 165, 31);
 }
+
+.day {
+  cursor: pointer;
+  text-align: center;
+}
+
+.day:hover {
+  color: black;
+}
+
+.today {
+  cursor: pointer;
+  text-align: center;
+  color: red;
+}
