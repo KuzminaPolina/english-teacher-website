@@ -31,7 +31,7 @@ const Hero = () => {
             />
           </picture>
         </div>
-        <Weather />
+        <Weather/>
         <div className="flex flex-col gap-2 lg:gap-4">
           <p className="text-xl">{heroSection.teacherName}</p>
           <h1 className="text-5xl md:text-4xl lg:text-6xl font-bold text-[#754444]">
