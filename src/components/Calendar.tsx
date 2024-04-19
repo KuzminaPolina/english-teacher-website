@@ -8,7 +8,7 @@ const Calendar = () => {
           <p className="text-3xl md:text-6xl text-[#e1c1e2] text-right">
             My Schedule
           </p>
-          <h2 className="text-4xl md:text-5xl text-[#754444] font-bold text-right mr-28 md:mr-[280px] mt-[-10px] z-20">
+          <h2 className="text-4xl md:text-5xl text-[#754444] font-bold text-right mr-24 md:mr-[280px] mt-[-10px] z-20">
             我的時間表
           </h2>
         </div>

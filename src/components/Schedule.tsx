@@ -22,7 +22,6 @@ const Schedule = () => {
 
   const [month, setMonth] = useState(currentMonth);
   const [year, setYear] = useState(currentYear);
-  const [isButtonActive, setIsButtonActive] = useState(true);
 
   const currentMonthName = months[month];
   const firstDayOfMonth = new Date(year, month, 1).getDay();
@@ -49,7 +48,7 @@ const Schedule = () => {
   }
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="md:grid grid-cols-2">
       <div className="calendar">
         <div className=" w-[300px] flex justify-between">
           <button
@@ -120,39 +119,39 @@ const Schedule = () => {
         </table>
       </div>
 
-      <div className="form">
+      <div className="form mt-8">
         <form id="appointmentForm" className="flex flex-col gap-5">
           <input
             type="text"
-            className="p-2 rounded-md"
+            className="p-2 rounded-md text-black"
             name="firstName"
             placeholder="Имя"
             required
           />
           <input
             type="text"
-            className="p-2 rounded-md"
+            className="p-2 rounded-md text-black"
             name="lastName"
             placeholder="Фамилия"
             required
           />
           <input
             type="tel"
-            className="p-2 rounded-md"
+            className="p-2 rounded-md text-black"
             name="phone"
             placeholder="Телефон"
             required
           />
           <input
             type="email"
-            className="p-2 rounded-md"
+            className="p-2 rounded-md text-black"
             name="email"
             placeholder="Почта"
             required
           />
           <input
             type="hidden"
-            className="p-2 rounded-md"
+            className="p-2 rounded-md text-black"
             name="selectedDate"
             id="selectedDate"
           />
