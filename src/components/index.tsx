@@ -7,6 +7,7 @@ import Teaching from "./Teaching";
 import Calendar from "./Calendar";
 import Footer from "./Footer";
 import Schedule from "./Schedule";
+import AdminPanel from "./AdminPanel";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Hero,
   Calendar,
   Schedule,
+  AdminPanel,
 };

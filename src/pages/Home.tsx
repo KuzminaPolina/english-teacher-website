@@ -7,7 +7,7 @@ import {
   Footer,
   Hero,
   Calendar,
-} from "./components";
+} from "../components";
 
 function App() {
   return (

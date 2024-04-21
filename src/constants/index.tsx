@@ -30,6 +30,17 @@ export const navLinks = [
   },
 ];
 
+export const loginLinks = [
+  {
+    id: "login",
+    title: "Log In",
+  },
+  {
+    id: "logout",
+    title: "Log Out",
+  },
+];
+
 export const heroSection = {
   id: "hero",
   photoSmall: teacherGongSm,

@@ -1,7 +1,7 @@
 import { heroSection } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import Weather from "./Weather";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -31,7 +31,6 @@ const Hero = () => {
             />
           </picture>
         </div>
-        <Weather />
         <div className="flex flex-col gap-2 lg:gap-4">
           <p className="text-xl">{heroSection.teacherName}</p>
           <h1 className="text-5xl md:text-4xl lg:text-6xl font-bold text-[#754444]">
@@ -61,6 +60,9 @@ const Hero = () => {
               {heroSection.line}
             </a>
           </div>
+        </div>
+        <div className="self-start">
+          <Link to="/english-teacher-website/admin">Log In</Link> | Log Out
         </div>
       </div>
       <div className="top-0 right-0 absolute hero-bkg">

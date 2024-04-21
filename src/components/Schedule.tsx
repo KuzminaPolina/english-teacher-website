@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { FormEvent, useState } from "react";
 
 const Schedule = () => {
   const currentDate = new Date();
@@ -22,6 +22,7 @@ const Schedule = () => {
 
   const [month, setMonth] = useState(currentMonth);
   const [year, setYear] = useState(currentYear);
+  const [selectedDate, setSelectedDate] = useState(""); // Состояние для выбранной даты
 
   const currentMonthName = months[month];
   const firstDayOfMonth = new Date(year, month, 1).getDay();
@@ -46,6 +47,50 @@ const Schedule = () => {
     calendarData.push(week);
     if (dayCounter > daysInMonth) break;
   }
+
+  const handleDateSelect = (day: number | string) => {
+    setSelectedDate(`${year}-${month + 1}-${day}`); // Форматирование даты в формат "гггг-мм-дд"
+  };
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const newClassRequest = Object.fromEntries(formData);
+    console.log(newClassRequest); //Так выглядит инфа, которая уходит на сервер, нормально же? Вся информация есть.
+
+    // Это старый код формирования объекта для отправки. На всякий случай пока оставила:
+    /* const formData = new FormData(event.currentTarget);
+    const requestData = {};
+    formData.forEach((value, key) => {
+      const index = parseInt(key);
+      requestData[index] = value; 
+    });
+    requestData["selectedDate"] = selectedDate; // Добавление выбранной даты в объект данных */
+
+    try {
+      const response = await fetch("http://127.0.0.1:5000/your-api-endpoint", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newClassRequest),
+      });
+
+      if (response.ok) {
+        // Обработка успешного ответа от сервера
+        console.log("Request sent successfully!");
+        // Очистить значения ввода в форме
+        event.currentTarget.reset();
+        setSelectedDate(""); // Сбросить выбранную дату
+      } else {
+        // Обработка ошибки от сервера
+        console.error("Request failed:", response.statusText);
+      }
+    } catch (error) {
+      // Обработка ошибок при выполнении запроса
+      console.error("Request error:", error);
+    }
+  };
 
   return (
     <div className="md:grid grid-cols-2">
@@ -107,6 +152,9 @@ const Schedule = () => {
                             ? "today"
                             : "day"
                         }
+                        onClick={() => {
+                          handleDateSelect(day);
+                        }}
                       >
                         {day}
                       </td>
@@ -120,8 +168,16 @@ const Schedule = () => {
       </div>
 
       <div className="form mt-8">
-        <form id="appointmentForm" className="flex flex-col gap-5">
+        <form
+          id="appointmentForm"
+          className="flex flex-col gap-5"
+          autoComplete="off"
+          onSubmit={(event) => {
+            handleSubmit(event);
+          }}
+        >
           <input
+            id="name"
             type="text"
             className="p-2 rounded-md text-black"
             name="firstName"
@@ -129,6 +185,7 @@ const Schedule = () => {
             required
           />
           <input
+            id="surname"
             type="text"
             className="p-2 rounded-md text-black"
             name="lastName"
@@ -136,6 +193,7 @@ const Schedule = () => {
             required
           />
           <input
+            id="phone"
             type="tel"
             className="p-2 rounded-md text-black"
             name="phone"
@@ -143,6 +201,7 @@ const Schedule = () => {
             required
           />
           <input
+            id="email"
             type="email"
             className="p-2 rounded-md text-black"
             name="email"
@@ -150,10 +209,12 @@ const Schedule = () => {
             required
           />
           <input
-            type="hidden"
+            /* type="hidden" */
             className="p-2 rounded-md text-black"
             name="selectedDate"
             id="selectedDate"
+            value={selectedDate}
+            required
           />
           <button type="submit" className="bg-amber-400 p-2 rounded-md">
             Записаться

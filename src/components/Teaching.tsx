@@ -20,12 +20,10 @@ const Teaching = () => {
               className="shadow-xl rounded-3xl p-5 grid grid-cols-2 sm:max-w-[400px] md:max-w-none sm:mx-auto md:mx-0 md:flex md:gap-5"
               key={advantage.id}
             >
-              <div className="w-[150px]">
+              <div className="w-[100px]">
                 <img
                   src={advantage.img}
-                  width="150"
-                  height="150"
-                  className="w-[150px] min-w-[150px]"
+                  className="w-[100px]"
                   alt="study icon"
                 />
               </div>
