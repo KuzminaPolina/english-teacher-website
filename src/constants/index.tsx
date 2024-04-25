@@ -125,3 +125,136 @@ export const advantages = [
       "照音拼字，並知道那些單字無法對應中文，在學習中可大幅降低被中文干擾的狀況",
   },
 ];
+
+export const lessons: {
+  id: number;
+  email: string;
+  firstName: string;
+  lastName: string;
+  phone: string;
+  selectedDate: string;
+  selectedTime: string;
+  confirmed: boolean;
+}[] = [
+  {
+    id: 1,
+    email: "felix@gmail.com",
+    firstName: "Felix",
+    lastName: "Lee",
+    phone: "89115555555",
+    selectedDate: "2024-5-14",
+    selectedTime: "18:00",
+    confirmed: false,
+  },
+  {
+    id: 2,
+    email: "woo@gmail.com",
+    firstName: "Wooyoung",
+    lastName: "Jung",
+    phone: "89117777777",
+    selectedDate: "2024-6-23",
+    selectedTime: "18:00",
+    confirmed: false,
+  },
+  {
+    id: 3,
+    email: "hwa@gmail.com",
+    firstName: "Seonghwa",
+    lastName: "Park",
+    phone: "89113333333",
+    selectedDate: "2024-5-1",
+    selectedTime: "18:00",
+    confirmed: false,
+  },
+  {
+    id: 4,
+    email: "joong@gmail.com",
+    firstName: "Hongjoong",
+    lastName: "Kim",
+    phone: "89111111111",
+    selectedDate: "2024-4-30",
+    selectedTime: "17:00",
+    confirmed: true,
+  },
+  {
+    id: 5,
+    email: "san@gmail.com",
+    firstName: "San",
+    lastName: "Choi",
+    phone: "89112222222",
+    selectedDate: "2024-4-30",
+    selectedTime: "15:00",
+    confirmed: true,
+  },
+];
+
+export const april = [
+  {
+    id: 1,
+    date: "2024-4-28",
+    lessons: [
+      {
+        id: 1,
+        email: "joong@gmail.com",
+        firstName: "Hongjoong",
+        lastName: "Kim",
+        phone: "89111111111",
+        selectedDate: "2024-4-28",
+        selectedTime: "15:00",
+        confirmed: true,
+      },
+      {
+        id: 2,
+        email: "san@gmail.com",
+        firstName: "San",
+        lastName: "Choi",
+        phone: "89112222222",
+        selectedDate: "2024-4-28",
+        selectedTime: "17:00",
+        confirmed: true,
+      },
+    ],
+  },
+  {
+    id: 2,
+    date: "2024-4-29",
+    lessons: [
+      {
+        id: 1,
+        email: "woo@gmail.com",
+        firstName: "Wooyoung",
+        lastName: "Jung",
+        phone: "89117777777",
+        selectedDate: "2024-4-29",
+        selectedTime: "18:00",
+        confirmed: true,
+      },
+    ],
+  },
+  {
+    id: 3,
+    date: "2024-4-30",
+    lessons: [
+      {
+        id: 1,
+        email: "felix@gmail.com",
+        firstName: "Felix",
+        lastName: "Lee",
+        phone: "89115555555",
+        selectedDate: "2024-4-30",
+        selectedTime: "16:00",
+        confirmed: false,
+      },
+      {
+        id: 2,
+        email: "hyunjin@gmail.com",
+        firstName: "Hyunjin",
+        lastName: "Hwang",
+        phone: "89110000000",
+        selectedDate: "2024-4-30",
+        selectedTime: "17:00",
+        confirmed: true,
+      },
+    ],
+  },
+];

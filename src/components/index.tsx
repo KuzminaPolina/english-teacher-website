@@ -7,6 +7,7 @@ import Teaching from "./Teaching";
 import Calendar from "./Calendar";
 import Footer from "./Footer";
 import Schedule from "./Schedule";
+import FormInput from "./FormInput";
 import AdminPanel from "./AdminPanel";
 
 export {
@@ -20,4 +21,5 @@ export {
   Calendar,
   Schedule,
   AdminPanel,
+  FormInput,
 };

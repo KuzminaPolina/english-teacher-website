@@ -84,6 +84,7 @@ body {
 .day {
   cursor: pointer;
   text-align: center;
+  padding: 4px;
 }
 
 .day:hover {
@@ -93,5 +94,7 @@ body {
 .today {
   cursor: pointer;
   text-align: center;
-  color: red;
+  padding: 4px;
+  background-color: #d69bd2;
+  border-radius: 50%;
 }

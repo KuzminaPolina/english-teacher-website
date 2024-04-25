@@ -1,4 +1,6 @@
 import { FormEvent, useState } from "react";
+import FormInput from "./FormInput";
+import { april } from "../constants";
 
 const Schedule = () => {
   const currentDate = new Date();
@@ -145,13 +147,21 @@ const Schedule = () => {
               return (
                 <tr>
                   {week.map((day) => {
+                    const currentDay = `${year}-${month + 1}-${day}`;
+                    const isDayBooked = april.some(
+                      (element) => element.date === currentDay
+                    );
+
                     return (
                       <td
-                        className={
+                        className={`${
                           day === today && month === currentMonth
                             ? "today"
                             : "day"
-                        }
+                        }`}
+                        style={{
+                          color: `${isDayBooked ? "#ff0000" : "#ffffff"}`,
+                        }}
                         onClick={() => {
                           handleDateSelect(day);
                         }}
@@ -176,46 +186,52 @@ const Schedule = () => {
             handleSubmit(event);
           }}
         >
-          <input
+          <FormInput
             id="name"
             type="text"
-            className="p-2 rounded-md text-black"
             name="firstName"
             placeholder="Имя"
             required
           />
-          <input
+          <FormInput
             id="surname"
             type="text"
-            className="p-2 rounded-md text-black"
             name="lastName"
             placeholder="Фамилия"
             required
           />
-          <input
+          <FormInput
             id="phone"
             type="tel"
-            className="p-2 rounded-md text-black"
             name="phone"
             placeholder="Телефон"
             required
           />
-          <input
+          <FormInput
             id="email"
             type="email"
-            className="p-2 rounded-md text-black"
             name="email"
             placeholder="Почта"
             required
           />
-          <input
+          <FormInput
             /* type="hidden" */
-            className="p-2 rounded-md text-black"
             name="selectedDate"
             id="selectedDate"
             value={selectedDate}
             required
           />
+          <label htmlFor="time">Choose suitable time:</label>
+          <select
+            id="time"
+            name="time"
+            className="p-2 rounded-md text-black w-full"
+          >
+            <option value="15">3 pm</option>
+            <option value="16">4 pm</option>
+            <option value="17">5 pm</option>
+            <option value="18">6 pm</option>
+          </select>
           <button type="submit" className="bg-amber-400 p-2 rounded-md">
             Записаться
           </button>
