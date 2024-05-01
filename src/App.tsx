@@ -1,12 +1,4 @@
-import {
-  Navbar,
-  About,
-  Contacts,
-  Reviews,
-  Teaching,
-  Footer,
-  Hero,
-} from "./components";
+import { Navbar, About, Contacts, Reviews, Teaching, Hero } from "./components";
 
 function App() {
   return (
