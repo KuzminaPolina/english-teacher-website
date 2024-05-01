@@ -21,9 +21,6 @@ function App() {
         <Contacts />
         <Teaching />
       </main>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 }
