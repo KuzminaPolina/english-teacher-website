@@ -34,7 +34,7 @@ const Links = () => {
     >
       {navLinks.map((menuItem) => (
         <motion.a
-          className="text-white mb-7 font-inter text-4xl"
+          className="text-white mb-7 font-notoSans text-4xl"
           href={`#${menuItem.id}`}
           key={menuItem.id}
           variants={itemVariants}

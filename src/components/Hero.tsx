@@ -1,47 +1,54 @@
 import { heroSection } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import Weather from "./Weather";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center relative">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-center max-w-[1440px] gap-5 md:gap-0 my-10 px-4 md:px-10 lg:px-32 z-10">
-        <div>
-          <picture>
-            <source
-              type="image/jpg"
-              media="(min-width: 1440px)"
-              srcSet={heroSection.photoBig}
-            />
-            <source
-              type="image/jpg"
-              media="(min-width: 1200px)"
-              srcSet={heroSection.photoBig}
-            />
-            <source
-              type="image/jpg"
-              media="(min-width: 767px)"
-              srcSet={heroSection.photoSmall}
-            />
-            <img
-              src={heroSection.photoSmall}
-              className="w-[100%] object-cover"
-              alt="teacher Gong"
-            />
-          </picture>
+    <div className="flex flex-col justify-center items-center relative py-5">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-center max-w-[1440px] gap-10 md:gap-10 my-10 px-4 md:px-10 lg:px-32 z-10">
+        <div className="diagonal-hero p-7">
+          <div className="diagonal-hero-white p-5">
+            <picture>
+              <source
+                type="image/jpg"
+                media="(min-width: 1440px)"
+                srcSet={heroSection.photoBig}
+              />
+              <source
+                type="image/jpg"
+                media="(min-width: 1200px)"
+                srcSet={heroSection.photoBig}
+              />
+              <source
+                type="image/jpg"
+                media="(min-width: 767px)"
+                srcSet={heroSection.photoSmall}
+              />
+              <img
+                src={heroSection.photoSmall}
+                className="w-[100%] object-cover"
+                alt="teacher Gong"
+              />
+            </picture>
+          </div>
         </div>
-        <Weather />
         <div className="flex flex-col gap-2 lg:gap-4">
-          <p className="text-xl">{heroSection.teacherName}</p>
-          <h1 className="text-5xl md:text-4xl lg:text-6xl font-bold text-[#754444]">
+          <p className="text-xl font-inter">{heroSection.teacherName}</p>
+          <h1 className="text-5xl md:text-4xl lg:text-6xl font-notoSans font-bold text-[#754444]">
             {heroSection.tagline}
           </h1>
           <div className="flex items-center gap-1 lg:gap-2 xl:gap-3">
-            <a href={heroSection.phoneLink} className="align-middle">
-              <FontAwesomeIcon icon={faPhone} /> {heroSection.phone}
+            <a
+              href={heroSection.phoneLink}
+              className="align-middle text-xl flex items-center"
+            >
+              <span className="phone content-center">
+                <FontAwesomeIcon icon={faPhone} className="text-white" />
+              </span>
+              {heroSection.phone}
             </a>
-            <a href={heroSection.lineLink} className="align-middle">
+
+            <a href={heroSection.lineLink} className="align-middle text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="inline"

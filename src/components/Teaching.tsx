@@ -8,7 +8,7 @@ const Teaching = () => {
           <p className="text-3xl md:text-6xl text-[#c8b0c9] text-right">
             Teaching style
           </p>
-          <h2 className="text-4xl md:text-5xl text-[#754444] font-bold text-right mr-28 md:mr-[280px] mt-[-10px] z-20">
+          <h2 className="text-4xl md:text-5xl text-[#754444] font-notoSans font-bold text-right mr-28 md:mr-[280px] mt-[-10px] z-20">
             教學方式
           </h2>
         </div>
@@ -27,8 +27,10 @@ const Teaching = () => {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-4">{advantage.title}</h3>
-                <p className="text-xl">{advantage.content}</p>
+                <h3 className="text-2xl font-bold mb-4 font-notoSans">
+                  {advantage.title}
+                </h3>
+                <p className="text-xl font-inter">{advantage.content}</p>
               </div>
             </li>
           ))}

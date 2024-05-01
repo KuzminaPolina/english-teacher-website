@@ -7,7 +7,7 @@ const Reviews = () => {
           <p className="text-3xl md:text-6xl text-[#c8b0c9] text-right">
             Students' Reviews
           </p>
-          <h2 className="text-4xl md:text-5xl text-[#754444] font-bold text-right mr-28 md:mr-[280px] mt-[-10px] z-20">
+          <h2 className="text-4xl md:text-5xl text-[#754444] font-notoSans font-bold text-right mr-28 md:mr-[280px] mt-[-10px] z-20">
             學生評語
           </h2>
         </div>
@@ -22,7 +22,9 @@ const Reviews = () => {
                   {reviewItem.name}
                 </p>
               </div>
-              <p className="text-white text-xl">{reviewItem.content}</p>
+              <p className="text-white text-xl font-inter">
+                {reviewItem.content}
+              </p>
             </li>
           ))}
         </ul>
