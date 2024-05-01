@@ -14,7 +14,7 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "我的經驗",
+    title: "教學方式",
   },
   {
     id: "reviews",
