@@ -84,32 +84,39 @@ export const advantages = [
     id: "adv 1",
     img: studyMode,
     title: "學習模式",
-    content: "反覆的英文對談加上中翻英訓練",
+    contentPositive: "反覆的英文對談加上中翻英訓練",
+    contentNegative: "反復的考試與補考",
   },
   {
     id: "adv 2",
     img: selfTest,
     title: "檢驗成效的方法",
-    content: "每次英語對談都可自行檢驗",
+    contentPositive: "每次英語對談都可自行檢驗",
+    contentNegative: "僅可透過分數檢驗",
   },
   {
     id: "adv 3",
     img: confidence,
     title: "學習信心",
-    content: "越常講英文，英語能力必定越提升，信心也會隨之增加",
+    contentPositive: "越常講英文，英語能力必定越提升，信心也會隨之增加",
+    contentNegative: "考試未必每次都能過分，而一旦拿低分可能就倍感挫折",
   },
   {
     id: "adv 4",
     img: speed,
     title: "學習速度",
-    content:
+    contentPositive:
       "初期學習速度雖較慢，但單字不易忘，文法觀念也具系統性，在後期能培養出強烈語感，學習速度也隨之加快",
+    contentNegative:
+      "初期學習速度較快，但單字也忘得快，且文法觀念支離破碎，導致後期難以應付大型考試，學習速度隨之大降",
   },
   {
     id: "adv 5",
     img: vocab,
     title: "背單子",
-    content:
+    contentPositive:
       "照音拼字，並知道那些單字無法對應中文，在學習中可大幅降低被中文干擾的狀況",
+    contentNegative:
+      "硬記每單字的字母,並將每個單字都附帶中文意思,誤將中英文看成對等的語言",
   },
 ];
