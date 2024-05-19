@@ -14,7 +14,7 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "教學方式",
+    title: "教學理念",
   },
   {
     id: "reviews",
@@ -26,7 +26,7 @@ export const navLinks = [
   },
   {
     id: "teaching",
-    title: "我的教育概念",
+    title: "教學方式",
   },
 ];
 
@@ -47,7 +47,7 @@ export const heroSection = {
 
 export const experience = {
   headerEng: "My teaching style",
-  headerCn: "教學方式",
+  headerCn: "教學理念",
   word1: "經驗",
   paragraph1:
     "我曾在多家補習班與公立學校教過英文，教學對象下至四歲，上至五十歲。因此，在目前的教育環境下，從學習的角度出發，英語學習者在學習過程中會有哪些瓶頸，會有哪些負面情緒，我都深有體悟；從教學的角度出發，補教業及學校教育體制會有哪些不足，會有哪些教學錯誤，我也相當清楚。因此，針對學習者，我除了提供更有效的學習方式，也會幫助調適學習者的心態；而身為教學者，我也會盡力彌補一般英語教學的不足，並導正不當的教學方式。讓英語學習者在學習的路上多點樂趣，少點壓力，乃至學出興趣，是我致力想做到的事。",
@@ -78,6 +78,14 @@ export const reviews = [
     content: "老師教學認真，文法和構句也都可以清楚說明。",
   },
 ];
+
+export const booking = {
+  headerEng: "Book a Trial",
+  headerCn: "預定試教",
+  buttonCn: "馬上預定 免費試教!",
+  headerSmall: "預定免費試教",
+  text: "記共前野敗顔移名察明課念話朝載提室。展何上作動学囲勤岡子抗判。初年余皇動経左点活内連百分崎星府万。食直月車家映摘信車醸代契可番禁交乗。能近説面災英木数放質試理値図図。検初大覧化更打条数今家起支衡松。性紅益入直社出傑碁応吉収身超文。集人能解定万勢芸株政傳宏産。誉機香法本兄詳四雇上趣暮止玲。掲購容収作残勢国数動決豊朝回場",
+}
 
 export const advantages = [
   {

@@ -1,4 +1,4 @@
-import { Navbar, About, Contacts, Reviews, Teaching, Hero } from "./components";
+import { Navbar, About, Contacts, Reviews, Teaching, Hero, Footer } from "./components";
 
 function App() {
   return (
@@ -13,6 +13,9 @@ function App() {
         <Contacts />
         <Teaching />
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   );
 }

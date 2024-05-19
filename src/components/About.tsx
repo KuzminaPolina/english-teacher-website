@@ -14,31 +14,31 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-5 md:gap-0 md:grid grid-cols-2">
           <div className="w-full h-[100%] flex justify-end items-center">
-            <p className="m-0 p-0 text-white text-8xl md:text-[10rem] leading-none text-right font-noto font-bold">
+            <p className="m-0 p-0 text-white text-[120px] md:text-[10rem] leading-none text-right font-noto font-bold">
               {experience.word1}
             </p>
           </div>
-          <p className="text-white text-xl max-w-[600px] mr-0 ml-auto font-inter">
+          <p className="text-white text-2xl max-w-[600px] mr-0 ml-auto font-inter">
             {experience.paragraph1}
           </p>
         </div>
         <div className="flex flex-col-reverse gap-5 md:gap-0 md:grid grid-cols-2">
-          <p className="text-white font-inter text-xl max-w-[600px]">
+          <p className="text-white font-inter text-2xl max-w-[600px]">
             {experience.paragraph2}
           </p>
           <div className="w-full h-[100%] flex justify-start items-center">
-            <p className="m-0 p-0 text-white text-8xl md:text-[10rem] leading-none text-right font-noto font-bold">
+            <p className="m-0 p-0 text-white text-[120px] md:text-[10rem] leading-none text-right font-noto font-bold">
               {experience.word2}
             </p>
           </div>
         </div>
         <div className="flex flex-col gap-5 md:gap-0 md:grid grid-cols-2">
           <div className="w-full h-[100%] flex justify-end items-center">
-            <p className="m-0 p-0 text-white text-8xl md:text-[10rem] leading-none text-right font-noto font-bold">
+            <p className="m-0 p-0 text-white text-[120px] md:text-[10rem] leading-none text-right font-noto font-bold">
               {experience.word3}
             </p>
           </div>
-          <p className="text-white font-inter text-xl max-w-[600px] mr-0 ml-auto">
+          <p className="text-white font-inter text-2xl max-w-[600px] mr-0 ml-auto">
             {experience.paragraph3}
           </p>
         </div>

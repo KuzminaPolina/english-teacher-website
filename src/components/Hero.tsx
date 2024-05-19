@@ -33,8 +33,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2 lg:gap-4">
-          <p className="text-xl font-inter">{heroSection.teacherName}</p>
-          <h1 className="text-5xl md:text-4xl lg:text-6xl font-notoSans font-bold text-[#754444]">
+          <p className="text-2xl font-inter">{heroSection.teacherName}</p>
+          <h1 className="text-4xl md:text-4xl lg:text-6xl font-notoSans font-bold text-[#754444]">
             {heroSection.tagline}
           </h1>
           <div className="flex items-center gap-1 lg:gap-2 xl:gap-3">

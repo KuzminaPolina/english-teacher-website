@@ -34,7 +34,7 @@ const Reviews = () => {
                   {reviewItem.name}
                 </p>
               </div>
-              <p className="text-white text-xl font-inter">
+              <p className="text-white text-2xl font-inter">
                 {reviewItem.content}
               </p>
             </li>
