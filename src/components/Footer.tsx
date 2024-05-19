@@ -6,8 +6,8 @@ const Footer = () => {
     <div id="trial">
       <div id="trial" className="px-4 md:px-10 lg:px-32 py-5 diagonal">        
       </div>
-      <div className="max-w-[80rem] mx-auto mb-5">
-        <div className="px-4 md:px-10 lg:px-32 py-20">
+      <div className="max-w-[90rem] mx-auto mb-5">
+        <div className="px-4 md:px-10 lg:px-0 py-20">
           <div className="flex flex-col md:flex-row justify-end gap-10">
             <div className="order-2 md:order-1">
               <p className="text-xl font-inter text-right mb-4">{heroSection.teacherName}</p>
