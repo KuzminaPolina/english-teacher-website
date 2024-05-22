@@ -1,7 +1,7 @@
 import { heroSection } from "../constants";
 import { booking } from "../constants";
 
-const Contacts = () => {
+const TrialSession = () => {
   return (
     <section id="trial" className="diagonal px-4 md:px-10 lg:px-32 py-28">
       <div className="max-w-[80rem] mx-auto mb-10 md:mb-24">
@@ -39,4 +39,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default TrialSession;

@@ -158,6 +158,10 @@ body {
   object-fit: cover;
 }
 
+.gradient-bg {
+  background-image: linear-gradient(to bottom, #ffffff3f 0%, #ffffff86 100%);
+}
+
 .circle {
   width: 150px;
   height: 150px;

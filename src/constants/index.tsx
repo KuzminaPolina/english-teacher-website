@@ -13,8 +13,8 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
-    title: "教學理念",
+    id: "Teaching Style",
+    title: "教學方式",
   },
   {
     id: "reviews",
@@ -25,8 +25,8 @@ export const navLinks = [
     title: " 預定試教",
   },
   {
-    id: "teaching",
-    title: "教學方式",
+    id: "teaching philosophy",
+    title: "教學理念",
   },
 ];
 
@@ -46,7 +46,7 @@ export const heroSection = {
 };
 
 export const experience = {
-  headerEng: "My teaching style",
+  headerEng: "Teaching philosophy",
   headerCn: "教學理念",
   word1: "經驗",
   paragraph1:

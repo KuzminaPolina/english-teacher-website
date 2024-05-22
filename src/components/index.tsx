@@ -1,9 +1,9 @@
 import Navbar from "./Navbar";
-import About from "./About";
+import TeachingStyle from "./TeachingStyle";
 import Hero from "./Hero";
-import Contacts from "./Contacts";
+import TrialSession from "./TrialSession";
 import Reviews from "./Reviews";
-import Teaching from "./Teaching";
+import Philosophy from "./Philosophy";
 import Footer from "./Footer";
 
-export { Navbar, About, Contacts, Reviews, Teaching, Footer, Hero };
+export { Navbar, TeachingStyle, TrialSession, Reviews, Philosophy, Footer, Hero };
