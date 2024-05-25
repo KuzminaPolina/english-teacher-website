@@ -40,7 +40,7 @@ const Hero = () => {
           <div className="flex items-center gap-1 lg:gap-2 xl:gap-3">
             <a
               href={heroSection.phoneLink}
-              className="align-middle text-xl flex items-center"
+              className="align-middle text-lg md:text-xl flex items-center"
             >
               <span className="phone content-center">
                 <FontAwesomeIcon icon={faPhone} className="text-white" />
@@ -48,7 +48,7 @@ const Hero = () => {
               {heroSection.phone}
             </a>
 
-            <a href={heroSection.lineLink} className="align-middle text-xl">
+            <a href={heroSection.lineLink} className="align-middle text-lg md:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="inline"

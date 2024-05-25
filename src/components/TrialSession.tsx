@@ -29,7 +29,7 @@ const TrialSession = () => {
             <h3 className="text-amber-400 text-4xl font-notoSans md:text-5xl font-bold pr-3 mb-10">
               {booking.headerSmall}
             </h3>
-            <p className="text-white text-2xl inline-block font-inter">
+            <p className="text-white text-xl md:text-2xl inline-block font-inter">
               {booking.text}
             </p>
           </li>
