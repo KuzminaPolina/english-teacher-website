@@ -4,11 +4,11 @@ import {
   heroFull,
   teacherGongBig,
   teacherGongSm,
-  studyMode,
+/*   studyMode,
   selfTest,
   confidence,
   speed,
-  vocab,
+  vocab, */
 } from "../assets";
 
 export const navLinks = [
@@ -90,28 +90,24 @@ export const booking = {
 export const advantages = [
   {
     id: "adv 1",
-    img: studyMode,
     title: "學習模式",
     contentPositive: "反覆的英文對談加上中翻英訓練",
     contentNegative: "反復的考試與補考",
   },
   {
     id: "adv 2",
-    img: selfTest,
     title: "檢驗成效的方法",
     contentPositive: "每次英語對談都可自行檢驗",
     contentNegative: "僅可透過分數檢驗",
   },
   {
     id: "adv 3",
-    img: confidence,
     title: "學習信心",
     contentPositive: "越常講英文，英語能力必定越提升，信心也會隨之增加",
     contentNegative: "考試未必每次都能過分，而一旦拿低分可能就倍感挫折",
   },
   {
     id: "adv 4",
-    img: speed,
     title: "學習速度",
     contentPositive:
       "初期學習速度雖較慢，但單字不易忘，文法觀念也具系統性，在後期能培養出強烈語感，學習速度也隨之加快",
@@ -120,11 +116,10 @@ export const advantages = [
   },
   {
     id: "adv 5",
-    img: vocab,
-    title: "背單子",
+    title: "單字與文法的學習",
     contentPositive:
-      "照音拼字，並知道那些單字無法對應中文，在學習中可大幅降低被中文干擾的狀況",
+      "照音拼字，並將文法結構簡化，知道單字與文法的哪些部分無法對應中文，進而大幅降低中文的干擾，更直接的學習英語",
     contentNegative:
-      "硬記每單字的字母,並將每個單字都附帶中文意思,誤將中英文看成對等的語言",
+      "死記每個單字的字母與複雜的文法結構，並用中文去逐字對應單字與文法，誤將中英文看成對等的語言，造成諸多學習障礙",
   },
 ];

@@ -2,7 +2,7 @@ import { advantages } from "../constants";
 
 const TeachingStyle = () => {
   return (
-    <section id="Teaching Style" className="diagonal px-4 md:px-10 lg:px-32 py-20">
+    <section id="Teaching Style" className="diagonal px-4 md:px-10 lg:px-32 py-20 lg:py-32">
       <div className="max-w-[80rem] mx-auto mb-5">
         <div className="relative mb-16">
           <p className="text-3xl md:text-6xl text-[#e1c1e2] text-right">
@@ -35,18 +35,9 @@ const TeachingStyle = () => {
         </div>        
       </div>
       <div className="max-w-[90rem] mx-auto">
-        <ul className="grid md:grid-cols-2 gap-5">
+        <ul className="grid lg:grid-cols-2 gap-5">
           {advantages.map((advantage) => (
-            <li className="shadow-xl rounded-3xl p-5 md:flex md:gap-5 gradient-bg">
-              <div className="w-[100px] center pb-5">
-                <img
-                  src={advantage.img}
-                  width="150"
-                  height="150"
-                  className="w-[100px] min-w-[100px]"
-                  alt="study icon"
-                />
-              </div>
+            <li className="shadow-xl rounded-3xl p-5 last-grid-full md:flex md:gap-5 gradient-bg">
               <div className="md:flex-1">
                 <h3 className="text-2xl font-bold mb-4 font-notoSans md:pl-[30px] text-center md:text-left">
                   {advantage.title}
