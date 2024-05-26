@@ -38,7 +38,7 @@ export const heroSection = {
   tagline: "英文家教老師",
   phoneLink: "tel:0987-988258",
   phone: "0987-988258",
-  lineLink: "https://msng.link/o?luvwinnie7969=ln",
+  lineLink: "https://line.me/ti/p/RfSH-I3Agq",
   line: "luvwinnie7969",
   backgroundSmall: heroTablet,
   backgroundLarge: heroDesktop,
@@ -83,6 +83,7 @@ export const booking = {
   headerEng: "Book a Trial",
   headerCn: "預定試教",
   buttonCn: "馬上預定 免費試教!",
+  link: "https://cal.com/teachersteven/30min",
   headerSmall: "預定免費試教",
   text: "記共前野敗顔移名察明課念話朝載提室。展何上作動学囲勤岡子抗判。初年余皇動経左点活内連百分崎星府万。食直月車家映摘信車醸代契可番禁交乗。能近説面災英木数放質試理値図図。検初大覧化更打条数今家起支衡松。性紅益入直社出傑碁応吉収身超文。集人能解定万勢芸株政傳宏産。誉機香法本兄詳四雇上趣暮止玲。掲購容収作残勢国数動決豊朝回場",
 }
