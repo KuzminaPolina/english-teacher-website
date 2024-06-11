@@ -17,7 +17,7 @@ const TrialSession = () => {
         <ul className="flex flex-col md:flex-row md:gap-10">
           <li className="relative self-end">
             <div className=" bg-amber-400 circle p-6 my-5 md:my-0">
-              <a href={booking.link}>
+              <a href={booking.link} target="_blank">
                 <p className="text-xl text-center">
                   {booking.buttonCn}
                 </p>
