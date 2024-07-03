@@ -5,8 +5,8 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center relative py-5">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-center max-w-[1440px] gap-10 md:gap-10 my-10 px-4 md:px-10 lg:px-32 z-10">
-        <div className="diagonal-hero p-7">
+      <div className="flex flex-col lg:flex-row md:items-center md:justify-center max-w-[1440px] gap-10 md:gap-10 my-10 px-4 md:px-10 lg:px-30 xl:px-32 z-10">
+        <div className="diagonal-hero p-7 md:hidden">
           <div className="diagonal-hero-white p-5">
             <picture>
               <source
@@ -32,12 +32,17 @@ const Hero = () => {
             </picture>
           </div>
         </div>
-        <div className="flex flex-col gap-2 lg:gap-4">
+        <div className="video hidden md:block">
+          <div className="py-10 lg:py-36 diagonal">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9msjDnihR2Y?si=bBGBeIDeaLw3du7N" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          </div>          
+        </div>
+        <div className="flex flex-col gap-2 lg:gap-4 self-start lg:self-center">
           <p className="text-2xl font-inter">{heroSection.teacherName}</p>
           <h1 className="text-4xl md:text-4xl lg:text-6xl font-notoSans font-bold text-[#754444]">
             {heroSection.tagline}
           </h1>
-          <div className="flex items-center gap-1 lg:gap-2 xl:gap-3">
+          <div className="flex md:flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 xl:gap-3">
             <a
               href={heroSection.phoneLink}
               className="align-middle text-lg md:text-xl flex items-center"
@@ -48,13 +53,13 @@ const Hero = () => {
               {heroSection.phone}
             </a>
 
-            <a href={heroSection.lineLink} className="align-middle text-lg md:text-xl">
+            <a href={heroSection.lineLink} className="text-lg md:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="inline"
+                className="inline-block icon-fix"
                 viewBox="0 0 48 48"
-                width="48px"
-                height="48px"
+                width="50px"
+                height="50px"
               >
                 <path
                   fill="#00c300"

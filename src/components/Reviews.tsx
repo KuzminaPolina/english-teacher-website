@@ -29,7 +29,7 @@ const Reviews = () => {
 
   return (
     <section id="reviews" className="px-4 md:px-10 lg:px-32 py-28">
-      <div className="max-w-[80rem] mx-auto mb-24">
+      <div className="max-w-[80rem] mx-auto mb-10 xl:mb-24">
         <div className="relative">
           <p className="text-3xl md:text-6xl text-[#c8b0c9] text-right">
             Students' Reviews
@@ -73,7 +73,7 @@ const Reviews = () => {
                   {reviewItem.name}
                 </p>
               </div>
-              <p className="text-white text-xl md:text-2xl font-inter">
+              <p className="text-white text-xl xl:text-2xl font-inter">
                 {reviewItem.content}
               </p>
             </li>

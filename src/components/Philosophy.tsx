@@ -12,18 +12,18 @@ const Philosophy = () => {
             {experience.headerCn}
           </h2>
         </div>
-        <div className="flex flex-col gap-5 md:gap-0 md:grid grid-cols-2">
+        <div className="flex flex-col gap-5 xl:gap-0 md:grid grid-cols-2">
           <div className="w-full h-[100%] flex justify-end items-center">
             <p className="m-0 p-0 text-[#754444] text-[100px] md:text-[10rem] leading-none text-right font-noto font-bold">
               {experience.word1}
             </p>
           </div>
-          <p className="text-[#754444] text-xl md:text-2xl max-w-[600px] mr-0 ml-auto font-inter">
+          <p className="text-[#754444] text-xl xl:text-2xl max-w-[700px] md:mr-0 md:ml-auto font-inter">
             {experience.paragraph1}
           </p>
         </div>
-        <div className="flex flex-col-reverse gap-5 md:gap-0 md:grid grid-cols-2">
-          <p className="text-[#754444] font-inter text-xl md:text-2xl max-w-[600px]">
+        <div className="flex flex-col-reverse gap-5 xl:gap-0 md:grid grid-cols-2">
+          <p className="text-[#754444] font-inter text-xl xl:text-2xl max-w-[700px]">
             {experience.paragraph2}
           </p>
           <div className="w-full h-[100%] flex justify-start items-center">
@@ -32,13 +32,13 @@ const Philosophy = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-5 md:gap-0 md:grid grid-cols-2">
+        <div className="flex flex-col gap-5 xl:gap-0 md:grid grid-cols-2">
           <div className="w-full h-[100%] flex justify-end items-center">
             <p className="m-0 p-0 text-[#754444] text-[120px] md:text-[10rem] leading-none text-right font-noto font-bold">
               {experience.word3}
             </p>
           </div>
-          <p className="text-[#754444] font-inter text-xl md:text-2xl max-w-[600px] mr-0 ml-auto">
+          <p className="text-[#754444] font-inter text-xl xl:text-2xl max-w-[700px] md:mr-0 md:ml-auto">
             {experience.paragraph3}
           </p>
         </div>

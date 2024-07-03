@@ -196,6 +196,10 @@ body {
   margin-right: 5px;
 }
 
+.icon-fix {
+  margin-left: -5px;
+}
+
 .advantages-flex {
   display: flex;
   flex-direction: column;
