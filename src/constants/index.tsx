@@ -4,6 +4,7 @@ import {
   heroFull,
   teacherGongBig,
   teacherGongSm,
+  seoImg,
 } from "../assets";
 
 export const navLinks = [
@@ -38,6 +39,7 @@ export const heroSection = {
   backgroundSmall: heroTablet,
   backgroundLarge: heroDesktop,
   backgroundXL: heroFull,
+  seoImg: seoImg,
 };
 
 export const experience = {

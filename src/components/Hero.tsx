@@ -99,6 +99,12 @@ const Hero = () => {
           />
         </picture>
       </div>
+      <div className="visually-hidden">
+        <img
+            src={heroSection.seoImg}
+            alt="seoBackground"
+          />
+      </div>
     </div>
   );
 };

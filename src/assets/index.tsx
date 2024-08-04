@@ -10,6 +10,7 @@ import selfTest from "./sprite/Self_test.svg";
 import confidence from "./sprite/Improvement.svg";
 import speed from "./sprite/Student.svg";
 import vocab from "./sprite/Vocabulary_type-2.svg";
+import seoImg from "./seo-img.jpg";
 
 export {
   studyMode,
@@ -24,4 +25,5 @@ export {
   teacherGongBig,
   teacherGongSm,
   decorationTop,
+  seoImg,
 };
